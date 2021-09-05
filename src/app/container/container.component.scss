@@ -1,9 +1,15 @@
 .container{
   border: black 1px solid;
-  width: 600px;
-  height: 800px;
+  width: 30%;
+  height:96vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: red;
 
+  app-task-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

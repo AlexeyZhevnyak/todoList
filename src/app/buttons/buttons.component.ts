@@ -24,7 +24,11 @@ export class ButtonsComponent implements OnInit {
     this.change(true);
   }
 
-  change(increased: any) {
+  change(increased: boolean): void {
     this.onChangedChildO.emit(increased);
+  }
+
+  deleteItems() {
+    this.dataHolder.deleteByCheck();
   }
 }

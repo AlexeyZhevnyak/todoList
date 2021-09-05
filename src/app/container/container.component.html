@@ -1,6 +1,6 @@
 <div class="container">
   <div class="task-items">
-    <p *ngFor="let item of getData()">{{item}}</p>
+    <app-task-item *ngFor="let item of getData()" [task]="item"></app-task-item>
     <input [(ngModel)]="valueToPush">
   </div>
   <app-buttons [toAdd]="valueToPush" (onChangedChildO)="onChangedParent($event)"></app-buttons>
